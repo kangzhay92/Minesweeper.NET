@@ -583,7 +583,7 @@ auto Board::TestMines(POINT pt, int msg) -> void
 }
 
 // Congratulations dialog procedure
-auto CALLBACK CongratsDlgProc(HWND hDlg, UINT uMsg, WPARAM wParam, LPARAM lParam)
+auto CALLBACK CongratsDlgProc(HWND hDlg, UINT uMsg, WPARAM wParam, LPARAM lParam) -> INT_PTR
 {
 	static Board* pBoard;
 
