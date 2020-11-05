@@ -1,0 +1,50 @@
+﻿<ResourceDictionary 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <!-- Contains all spritesheet definitions for the application -->
+    <BitmapImage x:Key="Leds"  UriSource="Resources/leds.bmp" />
+    <BitmapImage x:Key="Faces" UriSource="Resources/faces.bmp" />
+    <BitmapImage x:Key="Mines" UriSource="Resources/mines.bmp"/>
+
+    <x:Array x:Key="LedsImage" Type="CroppedBitmap">
+        <CroppedBitmap Source="{StaticResource Leds}" SourceRect="0   0 13 23"/>
+        <CroppedBitmap Source="{StaticResource Leds}" SourceRect="0  23 13 23"/>
+        <CroppedBitmap Source="{StaticResource Leds}" SourceRect="0  46 13 23"/>
+        <CroppedBitmap Source="{StaticResource Leds}" SourceRect="0  69 13 23"/>
+        <CroppedBitmap Source="{StaticResource Leds}" SourceRect="0  92 13 23"/>
+        <CroppedBitmap Source="{StaticResource Leds}" SourceRect="0 115 13 23"/>
+        <CroppedBitmap Source="{StaticResource Leds}" SourceRect="0 138 13 23"/>
+        <CroppedBitmap Source="{StaticResource Leds}" SourceRect="0 161 13 23"/>
+        <CroppedBitmap Source="{StaticResource Leds}" SourceRect="0 184 13 23"/>
+        <CroppedBitmap Source="{StaticResource Leds}" SourceRect="0 207 13 23"/>
+        <CroppedBitmap Source="{StaticResource Leds}" SourceRect="0 230 13 23"/>
+    </x:Array>
+
+    <ResourceDictionary x:Key="FacesImage">
+        <CroppedBitmap x:Key="Press" Source="{StaticResource Faces}" SourceRect="0  0 24 24"/>
+        <CroppedBitmap x:Key="Cool"  Source="{StaticResource Faces}" SourceRect="0 24 24 24"/>
+        <CroppedBitmap x:Key="Dead"  Source="{StaticResource Faces}" SourceRect="0 48 24 24"/>
+        <CroppedBitmap x:Key="Ooh"   Source="{StaticResource Faces}" SourceRect="0 72 24 24"/>
+        <CroppedBitmap x:Key="Smile" Source="{StaticResource Faces}" SourceRect="0 96 24 24"/>
+    </ResourceDictionary>
+
+    <ResourceDictionary x:Key="MinesImage">
+        <CroppedBitmap x:Key="MinePress"     Source="{StaticResource Mines}" SourceRect="0   0 16 16"/>
+        <CroppedBitmap x:Key="One"           Source="{StaticResource Mines}" SourceRect="0  16 16 16"/>
+        <CroppedBitmap x:Key="Two"           Source="{StaticResource Mines}" SourceRect="0  32 16 16"/>
+        <CroppedBitmap x:Key="Three"         Source="{StaticResource Mines}" SourceRect="0  48 16 16"/>
+        <CroppedBitmap x:Key="Four"          Source="{StaticResource Mines}" SourceRect="0  64 16 16"/>
+        <CroppedBitmap x:Key="Five"          Source="{StaticResource Mines}" SourceRect="0  80 16 16"/>
+        <CroppedBitmap x:Key="Six"           Source="{StaticResource Mines}" SourceRect="0  96 16 16"/>
+        <CroppedBitmap x:Key="Seven"         Source="{StaticResource Mines}" SourceRect="0 112 16 16"/>
+        <CroppedBitmap x:Key="Eight"         Source="{StaticResource Mines}" SourceRect="0 128 16 16"/>
+        <CroppedBitmap x:Key="Box"           Source="{StaticResource Mines}" SourceRect="0 144 16 16"/>
+        <CroppedBitmap x:Key="Flag"          Source="{StaticResource Mines}" SourceRect="0 160 16 16"/>
+        <CroppedBitmap x:Key="Question"      Source="{StaticResource Mines}" SourceRect="0 176 16 16"/>
+        <CroppedBitmap x:Key="Explode"       Source="{StaticResource Mines}" SourceRect="0 192 16 16"/>
+        <CroppedBitmap x:Key="Wrong"         Source="{StaticResource Mines}" SourceRect="0 208 16 16"/>
+        <CroppedBitmap x:Key="Mine"          Source="{StaticResource Mines}" SourceRect="0 224 16 16"/>
+        <CroppedBitmap x:Key="QuestionPress" Source="{StaticResource Mines}" SourceRect="0 240 16 16"/>
+    </ResourceDictionary>
+</ResourceDictionary>
