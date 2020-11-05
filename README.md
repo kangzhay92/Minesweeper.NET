@@ -1,4 +1,3 @@
-# Win32Apps
-Remake of Microsoft Windows old Application 
-
-All application in this project use Microsoft Visual Studio 2017 with C++17 standards
+# Minesweeper.NET
+Remake of old school puzzle game using .NET Framework. Has a standalone game logic library, 
+so it only needs to be integrated with the UI framework. See another branch for the old native version.
