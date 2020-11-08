@@ -211,6 +211,18 @@ namespace Minesweeper.WPF
             ShowFastestTimesDialog();
         }
 
+        private void mnuAbout_Click(object sender, RoutedEventArgs e)
+        {
+            DlgAbout dlg = new DlgAbout
+            {
+                Owner = this,
+                Link = "https://github.com/kangzhay92/Minesweeper.NET/releases",
+                LinkText = "Download latest version here",
+                AdditionalInfo = @"Minesweeper originated in the 1960's, and has been included with many operating systems throughout the years. The main reason it became popular though is that it's included with the Windows OS in all versions from 3.1 to Windows 7. This version I've created inspired by the version that shipped with Windows 98. Hope you enjoy the game :)"
+            };
+            dlg.ShowDialog();
+        }
+
         /// <summary>
         /// This function will be called on win condition, congratulate the player here!
         /// </summary>
@@ -232,5 +244,7 @@ namespace Minesweeper.WPF
                 }
             }
         }
+
+        
     }
 }

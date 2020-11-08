@@ -78,7 +78,7 @@
                 </MenuItem>
                 <MenuItem Header="_Info">
                     <MenuItem x:Name="mnuFastestTimes" Header="_Fastest Times..." Click="mnuFastestTimes_Click"/>
-                    <MenuItem x:Name="mnuAbout" Header="_About"/>
+                    <MenuItem x:Name="mnuAbout" Header="_About" Click="mnuAbout_Click"/>
                 </MenuItem>
             </Menu>
             <Canvas 
